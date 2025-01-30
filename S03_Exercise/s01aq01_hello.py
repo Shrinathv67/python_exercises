@@ -5,7 +5,8 @@ def get_username():
     Output : Return the user input as a string
     """
     # Your solution code should go in here
-    name = input("Please enter your name: ")
+    usr_name = input("Please enter your name: ")
+    return usr_name
     
 
 def say_hello(user):
