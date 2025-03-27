@@ -15,16 +15,19 @@ def do_max_min_num(num_list):
     print(f"The Max number from the user entered numbers is :{num_list[-1]}")
     
 def do_digit_check(num_list):
+    count_2, count_3, count_1 = 0,0,0
     for nums in num_list:
         if nums > 0 and nums < 10:
-            print("The number is a single digit number.")
+            count_1 = count_2 + 1
         elif nums > 10 and nums < 100:
-            print("The number is a two digit number.")
+            count_2 += 1
         elif nums > 100 and nums < 1000:
-            print("The number is a three digit number.")
+            count_3 += 1
         else:
             print(f"The number is {nums}")
-
+    print(f"The number of single digit number is {count_1}")
+    print(f"The number of two digit number is : {count_2}")
+    print(f"The number of three digit number is: {count_3}")
 def main():
     list_of_num = []
     list_of_num = get_usrinput()
