@@ -51,7 +51,10 @@ def get_number():
     return number
 
 # Main starts from here
-num = get_number()
-perform_check(num)
+def main():
+    num = get_number()
+    perform_check(num)
 
+if __name__ == "__main__":
+    main()
 

@@ -28,8 +28,11 @@ def get_number():
     return number
 
 # Main starts from here
-num1 = get_number()
-num2 = get_number()
-perform_check(num1)
-perform_check(num2) 
+def main():
+    num1 = get_number()
+    num2 = get_number()
+    perform_check(num1)
+    perform_check(num2) 
 
+if __name__ == "__main__":
+    main()

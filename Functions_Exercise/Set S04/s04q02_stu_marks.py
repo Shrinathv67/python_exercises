@@ -1,4 +1,9 @@
 """ What does this program do ?
+This program is for calculating the total percentage marks and ranks the student as per the given conditionss:
+First Class if score is more than or equal to 90%
+Second Class if score is more than or equal to 75%
+Average if student has not failed
+Failed if score is less than or equal to 35 %
 """
 
 def student_rank(average):
@@ -7,7 +12,7 @@ def student_rank(average):
     elif average >= 75 and average < 90:
         print("Second Class")
     elif average > 35 and average < 75:
-        print('Student has not failed.')
+        print('Average. Student has not failed.')
     else:
         print('Student has failed.')
 
