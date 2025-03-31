@@ -24,7 +24,7 @@ def do_digit_check(num_list):
         elif nums > 100 and nums < 1000:
             count_3 += 1
         else:
-            print(f"The number is {nums}")
+            print(f"The user has entered a number with more than three digits and the number is {nums}")
     print(f"The number of single digit number is {count_1}")
     print(f"The number of two digit number is : {count_2}")
     print(f"The number of three digit number is: {count_3}")
